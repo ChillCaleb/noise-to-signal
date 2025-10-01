@@ -1,0 +1,13 @@
+ticker,company,sector
+AAPL,Apple Inc,Information Technology
+MSFT,Microsoft Corporation,Information Technology
+AMZN,Amazon.com Inc,Consumer Discretionary
+GOOGL,Alphabet Inc,Communication Services
+META,Meta Platforms Inc,Communication Services
+TSLA,Tesla Inc,Consumer Discretionary
+LMT,Lockheed Martin Corporation,Industrials
+RTX,RTX Corporation,Industrials
+COST,Costco Wholesale Corporation,Consumer Staples
+XOM,Exxon Mobil Corporation,Energy
+SPY,SPDR S&P 500 ETF Trust,ETF
+ITA,iShares U.S. Aerospace & Defense ETF,ETF

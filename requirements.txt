@@ -1,0 +1,33 @@
+# Core scientific stack
+numpy
+pandas
+
+# Finance data
+yfinance
+
+# NLP stack
+spacy
+vaderSentiment
+rapidfuzz
+transformers
+torch
+
+# Visualization
+matplotlib
+plotly
+
+# App layer
+streamlit
+
+# Database
+sqlite-utils
+sqlalchemy
+python-dotenv
+
+# Backtesting / Quant tools
+#vectorbt
+#backtrader
+
+# Dev utilities
+jupyter
+notebook
