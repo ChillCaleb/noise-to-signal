@@ -1,0 +1,28 @@
+# --- Core ---
+pandas==2.2.3
+numpy==2.1.2
+requests==2.32.3
+python-dotenv==1.0.1
+tqdm==4.66.5
+
+# --- App / UI ---
+streamlit==1.37.1
+plotly==5.24.1
+matplotlib==3.9.2
+
+# --- Data Feeds ---
+yfinance==0.2.44
+alpha_vantage==3.0.0
+finnhub-python==2.4.5
+fredapi==0.5.2
+polygon-api-client==1.13.4
+
+# --- NLP / utilities ---
+vaderSentiment==3.3.2
+rapidfuzz==3.9.6
+pydantic==2.9.2
+SQLAlchemy==2.0.36
+python-dateutil==2.9.0.post0
+
+# --- Networking compat (macOS 3.9.x fallback) ---
+urllib3<2
