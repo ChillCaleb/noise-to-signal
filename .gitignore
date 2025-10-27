@@ -1,7 +1,31 @@
-venv/
-.ipynb_checkpoints/
+# environments / caches
+.venv/
 __pycache__/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytype/
+.ruff_cache/
 .DS_Store
 .env
+.cache/
+
+# data / artifacts
+data/raw/
 *.sqlite
-data/raw/*
+*.db
+*.parquet
+*.feather
+*.csv.gz
+
+# models / binaries
+models/
+*.pt
+*.pth
+*.onnx
+*.dylib
+*.so
+
+# node / build
+node_modules/
+dist/
+build/
