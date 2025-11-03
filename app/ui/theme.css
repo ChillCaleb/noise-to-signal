@@ -1,0 +1,34 @@
+/* Global Streamlit shell (outside the iframe) — Black bg, white text */
+:root {
+  --bg: #000000;
+  --panel: #0d0d0d;
+  --text: #ffffff;
+  --muted: #cccccc;
+  --border: #1e1e1e;
+}
+
+/* Page */
+.block-container { padding-top: 2rem; }
+body, .stApp, .stApp > div { background: var(--bg) !important; color: var(--text) !important; }
+
+/* Text */
+h1,h2,h3,h4,h5,h6, p, label, span, div { color: var(--text) !important; }
+.small { color: var(--muted) !important; }
+
+/* Inputs */
+.stTextArea textarea {
+  background: var(--panel) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Buttons */
+.stButton button {
+  background: var(--panel) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+}
+
+/* Headers / separators */
+hr { border: none; border-top: 1px solid var(--border); }

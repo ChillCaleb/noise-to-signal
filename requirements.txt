@@ -26,3 +26,17 @@ python-dateutil==2.9.0.post0
 
 # --- Networking compat (macOS 3.9.x fallback) ---
 urllib3<2
+
+# core for URL ingestion
+requests>=2.31
+trafilatura>=1.8.1
+readability-lxml>=0.8.1
+beautifulsoup4>=4.12
+lxml>=4.9.3
+pdfminer.six>=20221105
+python-dateutil>=2.8.2
+tldextract>=5.1.2
+
+# if you need pandas on 3.9:
+pandas==2.0.3
+numpy==1.24.4
