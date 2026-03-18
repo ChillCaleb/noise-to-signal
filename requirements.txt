@@ -4,6 +4,7 @@ numpy==2.1.2
 requests==2.32.3
 python-dotenv==1.0.1
 tqdm==4.66.5
+openai>=1.0,<2
 
 # --- App / UI ---
 streamlit==1.37.1

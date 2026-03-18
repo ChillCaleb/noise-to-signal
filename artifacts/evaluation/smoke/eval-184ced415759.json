@@ -1,0 +1,49 @@
+{
+  "article_id": "article-1c68e8bd886ba8aa",
+  "source_url": null,
+  "model_name": "test",
+  "run_id": "eval-184ced415759",
+  "summary_text": "A recent article made a straightforward observation about the natural world. The article stated that the sky appears blue and grass appears green. This is a factual description of the typical colors associated with these elements. The article's claim is based on widely accepted and observable characteristics of the sky and grass.",
+  "metrics": {
+    "summac": {
+      "model": "SummaCConv",
+      "variant": "vitc",
+      "granularity": "sentence",
+      "device": "cpu",
+      "score": 0.21245330572128296,
+      "raw": {
+        "scores": [
+          0.21245330572128296
+        ]
+      }
+    },
+    "factcc": {
+      "status": "skipped",
+      "score": null
+    },
+    "stability": {
+      "runs": 1,
+      "exact_match_rate": 1.0,
+      "mean_fuzzy_ratio": 100.0,
+      "mean_sequence_similarity": 1.0,
+      "mean_vector_cosine": 1.0,
+      "unique_outputs": 1,
+      "outputs_preview": [
+        "A recent article made a straightforward observation about the natural world. The article stated that the sky appears blue and grass appears green. This is a factual description of the typical colors associated with these elements. The article's claim is based on widely accepted and observable characteristics of the sky and grass."
+      ]
+    },
+    "compute": {
+      "total_emissions_kg": 0.0
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-11T16:25:16Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "short",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": null,
+    "generation_skipped": false
+  }
+}

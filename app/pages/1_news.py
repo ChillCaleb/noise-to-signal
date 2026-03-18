@@ -127,4 +127,4 @@ else:
     combined = combined.sort_values("datetime", ascending=False).reset_index(drop=True)
     # Reorder to match the ipynb style: source | title | description | datetime | url
     show = combined[["source", "title", "description", "datetime", "url"]]
-    st.dataframe(show, use_container_width=True, hide_index=True)
+    st.dataframe(show, width="stretch", hide_index=True)

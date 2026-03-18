@@ -1,0 +1,42 @@
+{
+  "article_id": "article-4061fd36f284ca30",
+  "source_url": "https://www.npr.org/2026/03/08/nx-s1-5741779/openai-resigns-ai-pentagon-guardrails-military",
+  "model_name": "Groq (llama-3.1-8b-instant)",
+  "run_id": "eval-ec53b03ff89b",
+  "summary_text": "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned due to concerns about the company's partnership with the U.S. Department of Defense. Kalinowski cited a lack of defined policy guardrails around certain AI uses, specifically surveillance of Americans without judicial oversight and lethal autonomy without human authorization. OpenAI has stated that the agreement with the Pentagon creates a workable path for responsible national security uses of AI, while emphasizing its red lines: no domestic surveillance and no autonomous weapons. Kalinowski's resignation comes amid heightened competition among AI developers to supply technology to the U.S. government.",
+  "metrics": {
+    "summac": {
+      "status": "unavailable",
+      "message": "NLTK is not installed. Install evaluation dependencies to run SummaC.",
+      "score": null
+    },
+    "factcc": {
+      "status": "skipped",
+      "score": null
+    },
+    "stability": {
+      "runs": 1,
+      "exact_match_rate": 1.0,
+      "mean_fuzzy_ratio": 100.0,
+      "mean_sequence_similarity": 1.0,
+      "mean_vector_cosine": 1.0,
+      "unique_outputs": 1,
+      "outputs_preview": [
+        "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned due to concerns about the company's partnership with the U.S. Department of Defense. Kalinowski cited a lack of defined policy guardrails around certain AI uses, specifically surveillance of Americans without judicial oversight and lethal autonomy without human authorization. OpenAI has stated that the agreement with the Pentagon creates a workable path for responsible national security uses of AI, while emphasizing its red lines: no domestic surveillance and no autonomous weapons. Kalinowski's resignation comes amid heightened competition among AI developers to supply technology to the U.S. government."
+      ]
+    },
+    "compute": {
+      "total_emissions_kg": 0.0
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-11T16:19:26Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "short",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": "OpenAI robotics leader resigns over concerns about Pentagon AI deal",
+    "generation_skipped": false
+  }
+}

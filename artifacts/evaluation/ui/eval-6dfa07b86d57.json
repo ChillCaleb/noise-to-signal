@@ -1,0 +1,42 @@
+{
+  "article_id": "article-4061fd36f284ca30",
+  "source_url": "https://www.npr.org/2026/03/08/nx-s1-5741779/openai-resigns-ai-pentagon-guardrails-military",
+  "model_name": "OpenAI via Groq (openai/gpt-oss-120b)",
+  "run_id": "eval-6dfa07b86d57",
+  "summary_text": "OpenAI senior robotics staff member Caitlin Kalinowski resigned on principle after the company announced a partnership that will place its AI systems inside secure U.S. Department of Defense computing environments. In a social‑media post she said the deal lacked clear policy guardrails, especially regarding domestic surveillance without judicial oversight and lethal autonomous weapons, and that more deliberation was needed before proceeding. Kalinowski emphasized her concerns were about the process, not individuals, and expressed respect for CEO Sam Altman and the team. OpenAI responded that the agreement outlines “red lines” – no domestic surveillance and no autonomous weapons – and that it will continue dialogue with employees, government and civil‑society groups. Kalinowski plans to remain in the robotics field.",
+  "metrics": {
+    "summac": {
+      "status": "unavailable",
+      "message": "NLTK is not installed. Install evaluation dependencies to run SummaC.",
+      "score": null
+    },
+    "factcc": {
+      "status": "skipped",
+      "score": null
+    },
+    "stability": {
+      "runs": 1,
+      "exact_match_rate": 1.0,
+      "mean_fuzzy_ratio": 100.0,
+      "mean_sequence_similarity": 1.0,
+      "mean_vector_cosine": 1.0,
+      "unique_outputs": 1,
+      "outputs_preview": [
+        "OpenAI senior robotics staff member Caitlin Kalinowski resigned on principle after the company announced a partnership that will place its AI systems inside secure U.S. Department of Defense computing environments. In a social‑media post she said the deal lacked clear policy guardrails, especially regarding domestic surveillance without judicial oversight and lethal autonomous weapons, and that more deliberation was needed before proceeding. Kalinowski emphasized her concerns were about the process, not individuals, and expressed respect for CEO Sam Altman and the team. OpenAI responded that the agreement outlines “red lines” – no domestic surveillance and no autonomous weapons – and that it will continue dialogue with employees, government and civil‑society groups. Kalinowski plans to remain in the robotics field."
+      ]
+    },
+    "compute": {
+      "total_emissions_kg": 0.0
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-11T16:19:26Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "short",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": "OpenAI robotics leader resigns over concerns about Pentagon AI deal",
+    "generation_skipped": false
+  }
+}

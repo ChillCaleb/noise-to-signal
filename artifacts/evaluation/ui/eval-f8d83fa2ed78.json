@@ -1,0 +1,64 @@
+{
+  "article_id": "article-f4d038df5f39b5c3",
+  "source_url": null,
+  "model_name": "Groq (llama-3.1-8b-instant)",
+  "run_id": "eval-f8d83fa2ed78",
+  "summary_text": "An OpenAI employee resigned after the Pentagon deal.",
+  "metrics": {
+    "summac": {
+      "model": "SummaCConv",
+      "variant": "vitc",
+      "granularity": "sentence",
+      "device": "cpu",
+      "score": 0.20128247141838074,
+      "raw": {
+        "scores": [
+          0.20128247141838074
+        ]
+      }
+    },
+    "factcc": {
+      "status": "not_run",
+      "mode": "placeholder",
+      "message": "FactCC inference is not wired by default. Use the prepared JSONL artifact with a local salesforce/factCC checkpoint workflow or replace this adapter.",
+      "prepared_input": {
+        "id": "article-f4d038df5f39b5c3",
+        "text": "OpenAI announced a Pentagon partnership. An employee resigned over guardrail concerns.",
+        "claim": "An OpenAI employee resigned after the Pentagon deal."
+      },
+      "score": null,
+      "checkpoint_path": null,
+      "eval_script": null,
+      "prepared_input_path": "artifacts/evaluation/ui/eval-f8d83fa2ed78.factcc.jsonl"
+    },
+    "stability": {
+      "runs": 1,
+      "exact_match_rate": 1.0,
+      "mean_fuzzy_ratio": 100.0,
+      "mean_sequence_similarity": 1.0,
+      "mean_vector_cosine": 1.0,
+      "unique_outputs": 1,
+      "outputs_preview": [
+        "An OpenAI employee resigned after the Pentagon deal."
+      ]
+    },
+    "compute": {
+      "eval-f8d83fa2ed78-generation": {
+        "project_name": "eval-f8d83fa2ed78-generation",
+        "status": "skipped",
+        "message": "Generation skipped because summary_text_override was provided."
+      },
+      "total_emissions_kg": 0.0
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-11T16:58:30Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "short",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": null,
+    "generation_skipped": true
+  }
+}

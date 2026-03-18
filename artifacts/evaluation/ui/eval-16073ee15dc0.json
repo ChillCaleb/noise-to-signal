@@ -1,0 +1,154 @@
+{
+  "article_id": "article-6a4a8b9f96be024d",
+  "source_url": "https://www.npr.org/sections/business/",
+  "model_name": "Groq (llama-3.1-8b-instant)",
+  "run_id": "eval-16073ee15dc0",
+  "summary_text": "Sen. Tim Scott, the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, has been involved in discussions regarding housing policy. \n\nIn June 2025, Scott participated in a hearing alongside Sen. Elizabeth Warren, the committee's ranking member. The hearing was related to the 21st Century ROAD to Housing Act, a bill that Scott and Warren co-sponsored. \n\nThe 21st Century ROAD to Housing Act is a legislative proposal aimed at addressing housing issues. However, the current status of the bill and its potential outcomes are unclear. \n\nAs the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, Sen. Scott plays a key role in shaping the committee's agenda and guiding its discussions on housing and banking policies. His involvement in the 21st Century ROAD to Housing Act reflects the committee's focus on addressing housing challenges. \n\nThe committee's work on housing policy is ongoing, and further developments on the 21st Century ROAD to Housing Act are expected. However, specific details on the bill's current status and potential outcomes are not available at this time.",
+  "metrics": {
+    "summac": {
+      "model": "SummaCConv",
+      "variant": "vitc",
+      "granularity": "sentence",
+      "device": "cpu",
+      "score": 0.2576030194759369,
+      "raw": {
+        "scores": [
+          0.2576030194759369
+        ]
+      }
+    },
+    "factcc": {
+      "status": "ok",
+      "mode": "hf",
+      "score": 0.996756374835968,
+      "label": "INCORRECT",
+      "raw": {
+        "probabilities": [
+          0.003243573009967804,
+          0.996756374835968
+        ],
+        "predicted_index": 1
+      },
+      "prepared_input": {
+        "id": "article-6a4a8b9f96be024d",
+        "text": "Sen. Tim Scott, R-S.C., the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, chats with Sen. Elizabeth Warren, D-Mass., the committee's ranking member, during a hearing on Capitol Hill in June 2025. The senators are co-sponsors of the 21st Century ROAD to Housing Act.\n                \n\n                    \n                    Kent Nishimura/Getty Images\n                    \n                \n\n\nhide caption",
+        "claim": "Sen. Tim Scott, the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, has been involved in discussions regarding housing policy. \n\nIn June 2025, Scott participated in a hearing alongside Sen. Elizabeth Warren, the committee's ranking member. The hearing was related to the 21st Century ROAD to Housing Act, a bill that Scott and Warren co-sponsored. \n\nThe 21st Century ROAD to Housing Act is a legislative proposal aimed at addressing housing issues. However, the current status of the bill and its potential outcomes are unclear. \n\nAs the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, Sen. Scott plays a key role in shaping the committee's agenda and guiding its discussions on housing and banking policies. His involvement in the 21st Century ROAD to Housing Act reflects the committee's focus on addressing housing challenges. \n\nThe committee's work on housing policy is ongoing, and further developments on the 21st Century ROAD to Housing Act are expected. However, specific details on the bill's current status and potential outcomes are not available at this time."
+      },
+      "hf_model": "manueldeprada/FactCC",
+      "prepared_input_path": "artifacts/evaluation/ui/eval-16073ee15dc0.factcc.jsonl"
+    },
+    "stability": {
+      "runs": 5,
+      "unique_outputs": 5,
+      "exact_match_rate": 0.0,
+      "mean_fuzzy_ratio": 60.6350842357195,
+      "mean_sequence_similarity": 0.29385896096976105,
+      "mean_vector_cosine": 0.8881037620601745,
+      "outputs_preview": [
+        "Sen. Tim Scott, the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, has been involved in discussions regarding housing policy. \n\nIn June 2025, Scott participated in a hearing alongside Sen. Elizabeth Warren, the committee's ranking member. The hearing was related to the 21st Century ROAD to Housing Act, a bill that Scott and Warren co-sponsored. \n\nThe 21st Century ROAD to Housing Act is a legislative proposal aimed at addressing housing issues. However, the current status of the bill and its potential outcomes are unclear. \n\nAs the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, Sen. Scott plays a key role in shaping the committee's agenda and guiding its discussions on housing and banking policies. His involvement in the 21st Century ROAD to Housing Act reflects the committee's focus on addressing housing challenges. \n\nThe committee's work on housing policy is ongoing, and further developments on the 21st Century ROAD to Housing Act are expected. However, specific details on the bill's current status and potential outcomes are not available at this time.",
+        "Sen. Tim Scott, the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, has been involved in discussions regarding the 21st Century ROAD to Housing Act. This act aims to address housing issues in the United States. \n\nThe Senate Committee on Banking, Housing, and Urban Affairs is a key body in the US Senate responsible for overseeing banking, housing, and urban development policies. As chairman, Sen. Tim Scott plays a crucial role in shaping the committee's agenda and guiding its discussions.\n\nThe 21st Century ROAD to Housing Act is a legislative proposal that has been co-sponsored by Sen. Tim Scott and Sen. Elizabeth Warren, the committee's ranking member. The exact details of the act, including its provisions and potential impact, are not specified in the provided information.\n\nThe committee's hearing in June 2025, where Sen. Tim Scott and Sen. Elizabeth Warren were present, suggests that the 21st Century ROAD to Housing Act is an active topic of discussion in the US Senate. However, the current status of the act, whether it has been passed or is still under consideration, is not mentioned in the provided text.\n\nIn summary, Sen. Tim Scott, the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, is involved in discussions regarding the 21st Century ROAD to Housing Act, a legislative proposal aimed at addressing housing issues in the United States.",
+        "Sen. Tim Scott, the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, has been involved in discussions regarding the 21st Century ROAD to Housing Act. This act is a legislative proposal aimed at addressing housing issues in the United States.\n\nThe 21st Century ROAD to Housing Act is a bipartisan bill co-sponsored by Sen. Tim Scott, a Republican from South Carolina, and Sen. Elizabeth Warren, a Democrat from Massachusetts. The exact details and provisions of the bill are not specified in the provided information.\n\nAs the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, Sen. Tim Scott plays a key role in shaping the committee's agenda and overseeing legislation related to banking, housing, and urban development. The committee's ranking member, Sen. Elizabeth Warren, is also involved in the discussions and has co-sponsored the 21st Century ROAD to Housing Act.\n\nThe hearing mentioned in the text took place on Capitol Hill in June 2025. The exact purpose and outcome of the hearing are not specified in the provided information. It is unclear what specific actions or decisions were taken regarding the 21st Century ROAD to Housing Act as a result of the hearing.\n\nIn summary, Sen. Tim Scott, the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, has been involved in discussions regarding the 21st Century ROAD to Housing Act, a bipartisan bill aimed at addressing housing issues in the United States."
+      ]
+    },
+    "compute": {
+      "eval-16073ee15dc0-generation": {
+        "project_name": "eval-16073ee15dc0-generation",
+        "csv_path": "artifacts/evaluation/ui/eval-16073ee15dc0/emissions.csv",
+        "started": true,
+        "emissions_kg": 2.471843170654032e-06,
+        "row": {
+          "timestamp": "2026-03-12T17:29:17",
+          "project_name": "eval-16073ee15dc0-generation",
+          "run_id": "501ef560-8748-4ad2-9789-cad2500e54c3",
+          "experiment_id": "5b0fa12a-3dd7-45bb-9766-cc326314d9f1",
+          "duration": "0.5297237079939805",
+          "emissions": "2.471843170654032e-06",
+          "emissions_rate": "4.666287601162304e-06",
+          "cpu_power": "42.5",
+          "gpu_power": "0.0",
+          "ram_power": "3.0",
+          "cpu_energy": "6.249584164611912e-06",
+          "gpu_energy": "0.0",
+          "ram_energy": "4.4060204832931056e-07",
+          "energy_consumed": "6.6901862129412225e-06",
+          "water_consumed": "0.0",
+          "country_name": "United States",
+          "country_iso_code": "USA",
+          "region": "",
+          "cloud_provider": "",
+          "cloud_region": "",
+          "os": "macOS-14.1-arm64-arm-64bit",
+          "python_version": "3.9.6",
+          "codecarbon_version": "3.2.3",
+          "cpu_count": "8",
+          "cpu_model": "Apple M2",
+          "gpu_count": "",
+          "gpu_model": "",
+          "longitude": "",
+          "latitude": "",
+          "ram_total_size": "8.0",
+          "tracking_mode": "machine",
+          "cpu_utilization_percent": "0",
+          "gpu_utilization_percent": "0",
+          "ram_utilization_percent": "0",
+          "ram_used_gb": "0",
+          "on_cloud": "N",
+          "pue": "1.0",
+          "wue": "0.0"
+        }
+      },
+      "eval-16073ee15dc0-evaluation": {
+        "project_name": "eval-16073ee15dc0-evaluation",
+        "csv_path": "artifacts/evaluation/ui/eval-16073ee15dc0/emissions.csv",
+        "started": true,
+        "emissions_kg": 4.921976419952217e-05,
+        "row": {
+          "timestamp": "2026-03-12T17:29:30",
+          "project_name": "eval-16073ee15dc0-evaluation",
+          "run_id": "e10e6769-decc-4355-bfe0-07927be8e413",
+          "experiment_id": "5b0fa12a-3dd7-45bb-9766-cc326314d9f1",
+          "duration": "10.542183916986687",
+          "emissions": "4.921976419952217e-05",
+          "emissions_rate": "4.6688394536746846e-06",
+          "cpu_power": "42.5",
+          "gpu_power": "0.0",
+          "ram_power": "3.0",
+          "cpu_energy": "0.0001244385011783379",
+          "gpu_energy": "0.0",
+          "ram_energy": "8.777631528306908e-06",
+          "energy_consumed": "0.0001332161327066448",
+          "water_consumed": "0.0",
+          "country_name": "United States",
+          "country_iso_code": "USA",
+          "os": "macOS-14.1-arm64-arm-64bit",
+          "python_version": "3.9.6",
+          "codecarbon_version": "3.2.3",
+          "cpu_count": "8",
+          "cpu_model": "Apple M2",
+          "ram_total_size": "8.0",
+          "tracking_mode": "machine",
+          "cpu_utilization_percent": "14.59",
+          "gpu_utilization_percent": "0",
+          "ram_utilization_percent": "85.67999999999999",
+          "ram_used_gb": "3.068719482421875",
+          "on_cloud": "N",
+          "pue": "1.0",
+          "wue": "0.0",
+          "cloud_provider": "",
+          "cloud_region": ""
+        }
+      },
+      "total_emissions_kg": 5.1691607e-05
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-12T21:29:30Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "long",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": "Business and Financial News : NPR",
+    "generation_skipped": false
+  }
+}

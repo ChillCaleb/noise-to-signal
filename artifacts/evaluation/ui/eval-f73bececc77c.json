@@ -1,0 +1,154 @@
+{
+  "article_id": "article-6a4a8b9f96be024d",
+  "source_url": "https://www.npr.org/sections/business/",
+  "model_name": "OpenAI via Groq (openai/gpt-oss-120b)",
+  "run_id": "eval-f73bececc77c",
+  "summary_text": "Sen. Tim Scott, the Republican chairman of the Senate Committee on Banking, Housing, and Urban Affairs, and Sen. Elizabeth Warren, the Democratic ranking member of the same committee, were seen speaking together during a committee hearing on Capitol Hill in June 2025. The two senators are listed as co‑sponsors of the “21st Century ROAD to Housing Act,” a piece of legislation that seeks to address the nation’s affordable‑housing shortage by expanding funding for the Low‑Income Housing Tax Credit, increasing the supply of public‑housing units, and providing new tools for states and localities to preserve existing affordable homes.\n\nThe hearing, convened by the Banking, Housing, and Urban Affairs Committee, was part of the committee’s regular oversight and legislative agenda. According to the brief description accompanying a Getty Images photograph, the discussion centered on the proposed bill and its potential impact on the housing market. Both senators have publicly advocated for bipartisan solutions to the housing crisis, with Scott emphasizing the need for private‑sector incentives and Warren highlighting the importance of robust federal investment and tenant protections.\n\nNo specific legislative action—such as a vote, amendment, or formal recommendation—was reported in the available excerpt. The caption does not indicate whether the hearing resulted in a committee report, a scheduled markup, or any immediate movement of the bill toward the Senate floor. Consequently, the immediate outcome of the June 2025 hearing remains unclear from the provided information.\n\nThe “21st Century ROAD to Housing Act” has been introduced in previous sessions and has garnered attention from housing advocates, developers, and consumer‑rights groups. Its proponents argue that the act could modernize the nation’s approach to affordable housing, while critics have raised concerns about the cost and the effectiveness of tax‑credit expansions. The joint sponsorship by a Republican and a Democrat underscores the bipartisan framing the bill’s sponsors hope will attract broader legislative support.\n\nIn summary, the June 2025 Senate Banking, Housing, and Urban Affairs Committee hearing featured a conversation between Chairman Tim Scott and Ranking Member Elizabeth Warren about their co‑sponsored housing legislation. The public record captured in the photo caption confirms their collaboration but does not provide details on any concrete decisions or next steps taken by the committee regarding the 21st Century ROAD to Housing Act.",
+  "metrics": {
+    "summac": {
+      "model": "SummaCConv",
+      "variant": "vitc",
+      "granularity": "sentence",
+      "device": "cpu",
+      "score": 0.20995835959911346,
+      "raw": {
+        "scores": [
+          0.20995835959911346
+        ]
+      }
+    },
+    "factcc": {
+      "status": "ok",
+      "mode": "hf",
+      "score": 0.9865250587463379,
+      "label": "INCORRECT",
+      "raw": {
+        "probabilities": [
+          0.013474981300532818,
+          0.9865250587463379
+        ],
+        "predicted_index": 1
+      },
+      "prepared_input": {
+        "id": "article-6a4a8b9f96be024d",
+        "text": "Sen. Tim Scott, R-S.C., the chairman of the Senate Committee on Banking, Housing, and Urban Affairs, chats with Sen. Elizabeth Warren, D-Mass., the committee's ranking member, during a hearing on Capitol Hill in June 2025. The senators are co-sponsors of the 21st Century ROAD to Housing Act.\n                \n\n                    \n                    Kent Nishimura/Getty Images\n                    \n                \n\n\nhide caption",
+        "claim": "Sen. Tim Scott, the Republican chairman of the Senate Committee on Banking, Housing, and Urban Affairs, and Sen. Elizabeth Warren, the Democratic ranking member of the same committee, were seen speaking together during a committee hearing on Capitol Hill in June 2025. The two senators are listed as co‑sponsors of the “21st Century ROAD to Housing Act,” a piece of legislation that seeks to address the nation’s affordable‑housing shortage by expanding funding for the Low‑Income Housing Tax Credit, increasing the supply of public‑housing units, and providing new tools for states and localities to preserve existing affordable homes.\n\nThe hearing, convened by the Banking, Housing, and Urban Affairs Committee, was part of the committee’s regular oversight and legislative agenda. According to the brief description accompanying a Getty Images photograph, the discussion centered on the proposed bill and its potential impact on the housing market. Both senators have publicly advocated for bipartisan solutions to the housing crisis, with Scott emphasizing the need for private‑sector incentives and Warren highlighting the importance of robust federal investment and tenant protections.\n\nNo specific legislative action—such as a vote, amendment, or formal recommendation—was reported in the available excerpt. The caption does not indicate whether the hearing resulted in a committee report, a scheduled markup, or any immediate movement of the bill toward the Senate floor. Consequently, the immediate outcome of the June 2025 hearing remains unclear from the provided information.\n\nThe “21st Century ROAD to Housing Act” has been introduced in previous sessions and has garnered attention from housing advocates, developers, and consumer‑rights groups. Its proponents argue that the act could modernize the nation’s approach to affordable housing, while critics have raised concerns about the cost and the effectiveness of tax‑credit expansions. The joint sponsorship by a Republican and a Democrat underscores the bipartisan framing the bill’s sponsors hope will attract broader legislative support.\n\nIn summary, the June 2025 Senate Banking, Housing, and Urban Affairs Committee hearing featured a conversation between Chairman Tim Scott and Ranking Member Elizabeth Warren about their co‑sponsored housing legislation. The public record captured in the photo caption confirms their collaboration but does not provide details on any concrete decisions or next steps taken by the committee regarding the 21st Century ROAD to Housing Act."
+      },
+      "hf_model": "manueldeprada/FactCC",
+      "prepared_input_path": "artifacts/evaluation/ui/eval-f73bececc77c.factcc.jsonl"
+    },
+    "stability": {
+      "runs": 5,
+      "unique_outputs": 5,
+      "exact_match_rate": 0.0,
+      "mean_fuzzy_ratio": 52.09457006173576,
+      "mean_sequence_similarity": 0.14429979566331363,
+      "mean_vector_cosine": 0.9128647618339418,
+      "outputs_preview": [
+        "Sen. Tim Scott, the Republican chairman of the Senate Committee on Banking, Housing, and Urban Affairs, and Sen. Elizabeth Warren, the Democratic ranking member of the same committee, were seen speaking together during a committee hearing on Capitol Hill in June 2025. The two senators are listed as co‑sponsors of the “21st Century ROAD to Housing Act,” a piece of legislation that seeks to address the nation’s affordable‑housing shortage by expanding funding for the Low‑Income Housing Tax Credit, increasing the supply of public‑housing units, and providing new tools for states and localities to preserve existing affordable homes.\n\nThe hearing, convened by the Banking, Housing, and Urban Affairs Committee, was part of the committee’s regular oversight and legislative agenda. According to the brief description accompanying a Getty Images photograph, the discussion centered on the proposed bill and its potential impact on the housing market. Both senators have publicly advocated for bipartisan solutions to the housing crisis, with Scott emphasizing the need for private‑sector incentives and Warren highlighting the importance of robust federal investment and tenant protections.\n\nNo specific legislative action—such as a vote, amendment, or formal recommendation—was reported in the available excerpt. The caption does not indicate whether the hearing resulted in a committee report, a scheduled markup, or any immediate movement of the bill toward the Senate floor. Consequently, the immediate outcome of the June 2025 hearing remains unclear from the provided information.\n\nThe “21st Century ROAD to Housing Act” has been introduced in previous sessions and has garnered attention from housing advocates, developers, and consumer‑rights groups. Its proponents argue that the act could modernize the nation’s approach to affordable housing, while critics have raised concerns about the cost and the effectiveness of tax‑credit expansions. The joint sponsorship by a Republican and a Democrat underscores the bipartisan framing the bill’s sponsors hope will attract broader legislative support.\n\nIn summary, the June 2025 Senate Banking, Housing, and Urban Affairs Committee hearing featured a conversation between Chairman Tim Scott and Ranking Member Elizabeth Warren about their co‑sponsored housing legislation. The public record captured in the photo caption confirms their collaboration but does not provide details on any concrete decisions or next steps taken by the committee regarding the 21st Century ROAD to Housing Act.",
+        "Sen. Tim Scott, the Republican chairman of the Senate Committee on Banking, Housing, and Urban Affairs, and Sen. Elizabeth Warren, the Democratic ranking member of the same committee, appeared together at a Capitol Hill hearing in June 2025. The hearing was convened by the Banking Committee to discuss the legislation they are jointly sponsoring, the “21st Century ROAD to Housing Act.” The event was photographed by Kent Nishimura of Getty Images.\n\nDuring the session, both senators outlined the bipartisan intent behind the bill, emphasizing the need to address the nation’s persistent housing affordability crisis. Scott, speaking as the committee chair, highlighted the act’s focus on expanding home‑ownership opportunities, increasing the supply of affordable rental units, and modernizing federal housing programs to reflect contemporary market conditions. Warren, as the committee’s ranking member, underscored the importance of equity‑focused provisions, such as stronger fair‑housing enforcement, increased funding for low‑income housing, and measures to curb discriminatory lending practices.\n\nThe hearing featured testimony from a range of stakeholders, including representatives from the Department of Housing and Urban Development, housing advocacy groups, and industry experts. While the transcript of the hearing is not provided in the source, the presence of both the chair and the ranking member signals a rare bipartisan partnership on a major housing policy initiative. The “21st Century ROAD to Housing Act” is positioned as a comprehensive reform package that would amend existing housing statutes, potentially including the Housing and Urban Development Act of 1968 and the National Housing Act, though the exact legislative text was not detailed in the brief report.\n\nNo vote or immediate legislative action was taken at the hearing; the committee’s next steps will likely involve further markup sessions, additional hearings, and eventual referral to the full Senate for consideration. As of the June 2025 hearing, the bill remains a proposal under discussion, and its prospects for passage depend on subsequent negotiations within the Senate and the broader Congress. No definitive outcome or timeline was announced during the event.",
+        "Sen. Tim Scott, the Republican chairman of the Senate Committee on Banking, Housing, and Urban Affairs, and Sen. Elizabeth Warren, the Democratic ranking member of the same committee, were seen speaking together during a committee hearing on Capitol Hill in June 2025. The brief visual record, captured by photographer Kent Nishimura, shows the two senators in a moment of bipartisan dialogue as they promote the “21st Century ROAD to Housing Act,” legislation they have jointly sponsored.\n\nThe hearing was part of the committee’s regular oversight and legislative business, focusing on the nation’s ongoing housing affordability crisis. Both senators have long advocated for policies that expand homeownership opportunities, increase the supply of affordable rental units, and modernize the nation’s housing finance system. Their joint sponsorship of the 21st Century ROAD to Housing Act signals a rare bipartisan effort to address these issues through a comprehensive package that includes:\n\n* Incentives for the construction of new, affordable housing, especially in high‑need urban and rural areas.  \n* Reforms to the Federal Housing Finance Agency’s (FHFA) oversight of Fannie Mae and Freddie Mac, aimed at expanding credit access for low‑ and moderate‑income borrowers.  \n* Provisions to strengthen the Community Development Financial Institutions (CDFI) sector, providing additional capital for community‑based lenders.  \n* Measures to improve data collection and transparency in the housing market, helping policymakers track supply‑demand dynamics more accurately.\n\nDuring the June hearing, committee staff presented testimony from a range of stakeholders, including housing advocates, developers, and financial‑services experts. The discussion highlighted the persistent shortage of affordable units, rising mortgage rates, and the impact of recent banking regulations on mortgage lending. While the hearing did not produce a vote, it served as a platform for Scott and Warren to outline the bill’s key components and to field questions from other committee members.\n\nNo legislative action was taken on the 21st Century ROAD to Housing Act at that time; the bill remains pending further debate and possible amendment. The bipartisan sponsorship, however, underscores a strategic attempt by the Senate’s banking committee leadership to bridge partisan divides on housing policy. As of the hearing’s conclusion, the act’s prospects depend on subsequent committee markup sessions, potential reconciliation with the House, and broader Senate support. No final vote or amendment schedule has been announced, and the outcome of the legislation remains uncertain."
+      ]
+    },
+    "compute": {
+      "eval-f73bececc77c-generation": {
+        "project_name": "eval-f73bececc77c-generation",
+        "csv_path": "artifacts/evaluation/ui/eval-f73bececc77c/emissions.csv",
+        "started": true,
+        "emissions_kg": 7.887201170148588e-06,
+        "row": {
+          "timestamp": "2026-03-12T17:30:02",
+          "project_name": "eval-f73bececc77c-generation",
+          "run_id": "e38feb43-6542-4ca9-a292-29e3e79d9505",
+          "experiment_id": "5b0fa12a-3dd7-45bb-9766-cc326314d9f1",
+          "duration": "1.6892322909989161",
+          "emissions": "7.887201170148588e-06",
+          "emissions_rate": "4.669103954604458e-06",
+          "cpu_power": "42.5",
+          "gpu_power": "0.0",
+          "ram_power": "3.0",
+          "cpu_energy": "1.9939890761805954e-05",
+          "gpu_energy": "0.0",
+          "ram_energy": "1.407274444172799e-06",
+          "energy_consumed": "2.1347165205978754e-05",
+          "water_consumed": "0.0",
+          "country_name": "United States",
+          "country_iso_code": "USA",
+          "region": "",
+          "cloud_provider": "",
+          "cloud_region": "",
+          "os": "macOS-14.1-arm64-arm-64bit",
+          "python_version": "3.9.6",
+          "codecarbon_version": "3.2.3",
+          "cpu_count": "8",
+          "cpu_model": "Apple M2",
+          "gpu_count": "",
+          "gpu_model": "",
+          "longitude": "",
+          "latitude": "",
+          "ram_total_size": "8.0",
+          "tracking_mode": "machine",
+          "cpu_utilization_percent": "9.3",
+          "gpu_utilization_percent": "0",
+          "ram_utilization_percent": "80.6",
+          "ram_used_gb": "3.4849090576171875",
+          "on_cloud": "N",
+          "pue": "1.0",
+          "wue": "0.0"
+        }
+      },
+      "eval-f73bececc77c-evaluation": {
+        "project_name": "eval-f73bececc77c-evaluation",
+        "csv_path": "artifacts/evaluation/ui/eval-f73bececc77c/emissions.csv",
+        "started": true,
+        "emissions_kg": 7.78431146922862e-05,
+        "row": {
+          "timestamp": "2026-03-12T17:30:21",
+          "project_name": "eval-f73bececc77c-evaluation",
+          "run_id": "32ac2a5e-7877-4e15-872d-010be62593aa",
+          "experiment_id": "5b0fa12a-3dd7-45bb-9766-cc326314d9f1",
+          "duration": "16.67260137500125",
+          "emissions": "7.78431146922862e-05",
+          "emissions_rate": "4.66892435927866e-06",
+          "cpu_power": "42.5",
+          "gpu_power": "0.0",
+          "ram_power": "3.0",
+          "cpu_energy": "0.0001968021026044476",
+          "gpu_energy": "0.0",
+          "ram_energy": "1.388478031334671e-05",
+          "energy_consumed": "0.0002106868829177943",
+          "water_consumed": "0.0",
+          "country_name": "United States",
+          "country_iso_code": "USA",
+          "os": "macOS-14.1-arm64-arm-64bit",
+          "python_version": "3.9.6",
+          "codecarbon_version": "3.2.3",
+          "cpu_count": "8",
+          "cpu_model": "Apple M2",
+          "ram_total_size": "8.0",
+          "tracking_mode": "machine",
+          "cpu_utilization_percent": "16.612499999999997",
+          "gpu_utilization_percent": "0",
+          "ram_utilization_percent": "85.40624999999999",
+          "ram_used_gb": "3.103194236755371",
+          "on_cloud": "N",
+          "pue": "1.0",
+          "wue": "0.0",
+          "cloud_provider": "",
+          "cloud_region": ""
+        }
+      },
+      "total_emissions_kg": 8.5730316e-05
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-12T21:30:21Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "long",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": "Business and Financial News : NPR",
+    "generation_skipped": false
+  }
+}

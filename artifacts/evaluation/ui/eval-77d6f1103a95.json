@@ -1,0 +1,136 @@
+{
+  "article_id": "article-4061fd36f284ca30",
+  "source_url": "https://www.npr.org/2026/03/08/nx-s1-5741779/openai-resigns-ai-pentagon-guardrails-military",
+  "model_name": "groq:llama-3.1-8b-instant",
+  "run_id": "eval-77d6f1103a95",
+  "summary_text": "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned citing concerns about the company's partnership with the U.S. Department of Defense. Kalinowski expressed concerns that policy guardrails around certain AI uses were not sufficiently defined before the agreement was announced. She emphasized that her concerns were about the process rather than specific executives, stating she had \"deep respect\" for OpenAI CEO Sam Altman and the team. Kalinowski's resignation comes amid heightened competition among AI developers to supply technology to the U.S. government. OpenAI maintains that the agreement with the Pentagon creates a \"workable path\" for responsible national security uses of AI, while making clear its red lines: no domestic surveillance and no autonomous weapons.",
+  "metrics": {
+    "summac": {
+      "model": "SummaCConv",
+      "variant": "vitc",
+      "granularity": "sentence",
+      "device": "cpu",
+      "score": 0.6297875642776489,
+      "raw": {
+        "scores": [
+          0.6297875642776489
+        ]
+      }
+    },
+    "factcc": {
+      "status": "skipped",
+      "score": null
+    },
+    "stability": {
+      "runs": 1,
+      "exact_match_rate": 1.0,
+      "mean_fuzzy_ratio": 100.0,
+      "mean_sequence_similarity": 1.0,
+      "mean_vector_cosine": 1.0,
+      "unique_outputs": 1,
+      "outputs_preview": [
+        "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned citing concerns about the company's partnership with the U.S. Department of Defense. Kalinowski expressed concerns that policy guardrails around certain AI uses were not sufficiently defined before the agreement was announced. She emphasized that her concerns were about the process rather than specific executives, stating she had \"deep respect\" for OpenAI CEO Sam Altman and the team. Kalinowski's resignation comes amid heightened competition among AI developers to supply technology to the U.S. government. OpenAI maintains that the agreement with the Pentagon creates a \"workable path\" for responsible national security uses of AI, while making clear its red lines: no domestic surveillance and no autonomous weapons."
+      ]
+    },
+    "compute": {
+      "eval-77d6f1103a95-generation": {
+        "project_name": "eval-77d6f1103a95-generation",
+        "csv_path": "artifacts/evaluation/ui/eval-77d6f1103a95/emissions.csv",
+        "started": true,
+        "emissions_kg": 2.1217211110366045e-06,
+        "row": {
+          "timestamp": "2026-03-11T09:10:57",
+          "project_name": "eval-77d6f1103a95-generation",
+          "run_id": "119b3170-2b9d-4141-985d-076557a70553",
+          "experiment_id": "5b0fa12a-3dd7-45bb-9766-cc326314d9f1",
+          "duration": "0.4547338749998744",
+          "emissions": "2.1217211110366045e-06",
+          "emissions_rate": "4.665852331843962e-06",
+          "cpu_power": "42.5",
+          "gpu_power": "0.0",
+          "ram_power": "3.0",
+          "cpu_energy": "5.364243254163941e-06",
+          "gpu_energy": "0.0",
+          "ram_energy": "3.783173958337708e-07",
+          "energy_consumed": "5.742560649997712e-06",
+          "water_consumed": "0.0",
+          "country_name": "United States",
+          "country_iso_code": "USA",
+          "region": "",
+          "cloud_provider": "",
+          "cloud_region": "",
+          "os": "macOS-14.1-arm64-arm-64bit",
+          "python_version": "3.9.6",
+          "codecarbon_version": "3.2.3",
+          "cpu_count": "8",
+          "cpu_model": "Apple M2",
+          "gpu_count": "",
+          "gpu_model": "",
+          "longitude": "",
+          "latitude": "",
+          "ram_total_size": "8.0",
+          "tracking_mode": "machine",
+          "cpu_utilization_percent": "0",
+          "gpu_utilization_percent": "0",
+          "ram_utilization_percent": "0",
+          "ram_used_gb": "0",
+          "on_cloud": "N",
+          "pue": "1.0",
+          "wue": "0.0"
+        }
+      },
+      "eval-77d6f1103a95-evaluation": {
+        "project_name": "eval-77d6f1103a95-evaluation",
+        "csv_path": "artifacts/evaluation/ui/eval-77d6f1103a95/emissions.csv",
+        "started": true,
+        "emissions_kg": 0.00016991970539924716,
+        "row": {
+          "timestamp": "2026-03-11T09:11:34",
+          "project_name": "eval-77d6f1103a95-evaluation",
+          "run_id": "57c3bf8c-e0f4-4826-b589-98d94a0de363",
+          "experiment_id": "5b0fa12a-3dd7-45bb-9766-cc326314d9f1",
+          "duration": "36.40758270900005",
+          "emissions": "0.00016991970539924716",
+          "emissions_rate": "4.667151531519903e-06",
+          "cpu_power": "42.5",
+          "gpu_power": "0.0",
+          "ram_power": "3.0",
+          "cpu_energy": "0.0004296170977403209",
+          "gpu_energy": "0.0",
+          "ram_energy": "3.028039246666897e-05",
+          "energy_consumed": "0.0004598974902069899",
+          "water_consumed": "0.0",
+          "country_name": "United States",
+          "country_iso_code": "USA",
+          "os": "macOS-14.1-arm64-arm-64bit",
+          "python_version": "3.9.6",
+          "codecarbon_version": "3.2.3",
+          "cpu_count": "8",
+          "cpu_model": "Apple M2",
+          "ram_total_size": "8.0",
+          "tracking_mode": "machine",
+          "cpu_utilization_percent": "37.07500000000001",
+          "gpu_utilization_percent": "0",
+          "ram_utilization_percent": "85.54166666666666",
+          "ram_used_gb": "3.1479585435655384",
+          "on_cloud": "N",
+          "pue": "1.0",
+          "wue": "0.0",
+          "cloud_provider": "",
+          "cloud_region": ""
+        }
+      },
+      "total_emissions_kg": 0.000172041427
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-11T13:11:34Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "short",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": "OpenAI robotics leader resigns over concerns about Pentagon AI deal",
+    "generation_skipped": false
+  }
+}

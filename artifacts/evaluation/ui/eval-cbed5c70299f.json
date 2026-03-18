@@ -1,0 +1,49 @@
+{
+  "article_id": "article-135cafc44630fb74",
+  "source_url": null,
+  "model_name": "groq:llama-3.1-8b-instant",
+  "run_id": "eval-cbed5c70299f",
+  "summary_text": "A TypeError occurred in the \"noise-to-signal\" app, specifically in the \"evaluation\" page. The error message indicates that the \"__init__\" method of the \"EvaluationConfig\" class received an unexpected keyword argument named \"enable_summac\". This error occurred on line 105 of the \"evaluation_view.py\" file. The exact cause and solution of the issue are not specified in the provided information.",
+  "metrics": {
+    "summac": {
+      "model": "SummaCConv",
+      "variant": "vitc",
+      "granularity": "sentence",
+      "device": "cpu",
+      "score": 0.28031063079833984,
+      "raw": {
+        "scores": [
+          0.28031063079833984
+        ]
+      }
+    },
+    "factcc": {
+      "status": "skipped",
+      "score": null
+    },
+    "stability": {
+      "runs": 1,
+      "exact_match_rate": 1.0,
+      "mean_fuzzy_ratio": 100.0,
+      "mean_sequence_similarity": 1.0,
+      "mean_vector_cosine": 1.0,
+      "unique_outputs": 1,
+      "outputs_preview": [
+        "A TypeError occurred in the \"noise-to-signal\" app, specifically in the \"evaluation\" page. The error message indicates that the \"__init__\" method of the \"EvaluationConfig\" class received an unexpected keyword argument named \"enable_summac\". This error occurred on line 105 of the \"evaluation_view.py\" file. The exact cause and solution of the issue are not specified in the provided information."
+      ]
+    },
+    "compute": {
+      "total_emissions_kg": 0.0
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-11T09:05:00Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "short",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": null,
+    "generation_skipped": false
+  }
+}

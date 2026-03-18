@@ -1,0 +1,71 @@
+{
+  "article_id": "article-4061fd36f284ca30",
+  "source_url": "https://www.npr.org/2026/03/08/nx-s1-5741779/openai-resigns-ai-pentagon-guardrails-military",
+  "model_name": "Groq (llama-3.1-8b-instant)",
+  "run_id": "eval-91a001d2678c",
+  "summary_text": "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned citing concerns over the company's partnership with the U.S. Department of Defense. Kalinowski expressed concerns that policy guardrails around certain AI uses were not sufficiently defined before the agreement was announced. She emphasized that her concerns were about the process rather than specific executives inside the company. OpenAI stated that the agreement with the Pentagon creates a workable path for responsible national security uses of AI while making clear its red lines: no domestic surveillance and no autonomous weapons. Kalinowski plans to continue working in the field of responsible physical AI.",
+  "metrics": {
+    "summac": {
+      "model": "SummaCConv",
+      "variant": "vitc",
+      "granularity": "sentence",
+      "device": "cpu",
+      "score": 0.5533227324485779,
+      "raw": {
+        "scores": [
+          0.5533227324485779
+        ]
+      }
+    },
+    "factcc": {
+      "status": "not_run",
+      "mode": "placeholder",
+      "message": "FactCC inference is not wired by default. Use the prepared JSONL artifact with a local salesforce/factCC checkpoint workflow or replace this adapter.",
+      "prepared_input": {
+        "id": "article-4061fd36f284ca30",
+        "text": "OpenAI CEO Sam Altman speaks in Washington, D.C., on July 22, 2025.\n                \n\n                    \n                    Mandel Ngan/AFP via Getty Images\n                    \n                \n\n\nhide caption\n\n\n\n\n\n\ntoggle caption\n\n\n\n\n\n        \n        Mandel Ngan/AFP via Getty Images\n        \n    \n\n\n\n\n\n\nA senior member of OpenAI's robotics team has resigned, citing concerns about how the company moved forward with a recently announced partnership with the U.S. Department of Defense.\n \nCaitlin Kalinowski, who served as a member of technical staff focused on robotics and hardware, posted on social media that she had stepped down on \"principle\" after the company revealed plans to \nmake its AI systems available\n inside secure Defense Department computing systems.\n\n\nThe agreement is part of a broader push by the U.S. government to incorporate advanced AI tools into national security work, a trend that has sparked debate across the tech industry about oversight and acceptable uses.\n \nIn \npublic posts\n explaining her decision, Kalinowski wrote: \"I resigned from OpenAI. I care deeply about the Robotics team and the work we built together. This wasn't an easy call.\"\n \nShe said policy guardrails around certain AI uses were not sufficiently defined before OpenAI announced an agreement with the Pentagon. \"AI has an important role in national security,\" Kalinowski wrote. \"But surveillance of Americans without judicial oversight and lethal autonomy without human authorization are lines that deserved more deliberation than they got.\"\n\n\nKalinowski also emphasized that her concerns were more about the process rather than specific executives inside the company, saying she had \"deep respect for Sam and the team, and I'm proud of what we built together,\" referring to OpenAI chief executive Sam Altman.\n \nA spokesperson for OpenAI told NPR the company believes the agreement with the Pentagon \"creates a workable path for responsible national security uses of AI while making clear our red lines: no domestic surveillance and no autonomous weapons.\"\n \nIt continued, saying the company recognized \"people have strong views about these issues and we will continue to engage in discussion with employees, government, civil society and communities around the world.\"\n \nKalinowski's resignation comes amid heightened competition among leading developers of artificial intelligence to supply technology to the U.S. government. In recent weeks, federal agencies have turned to OpenAI and \nGoogle\n for AI systems as tensions increased with a rival firm, Anthropic, over the military use of its models.\n \nAnthropic's \nCEO spoke out against\n allowing the company's software to be used for applications such as domestic mass surveillance or autonomous weapons, a stance that led to clashes with defense officials — including Secretary of Defense Pete Hegseth — who said the department needs flexibility to deploy commercial AI tools in all \"lawful\" operations.\n\n\nWithin OpenAI, Kalinowski's role focused on building out the company's robotics organization as it scaled. She wrote on her LinkedIn profile that this included hiring to support the company's expansion into AI efforts tied to physical infrastructure and machinery.\n \nKalinowski signaled she plans to continue working in the same field. \"I'm taking a little time, but I remain very focused on building responsible physical AI,\" she wrote.",
+        "claim": "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned citing concerns over the company's partnership with the U.S. Department of Defense. Kalinowski expressed concerns that policy guardrails around certain AI uses were not sufficiently defined before the agreement was announced. She emphasized that her concerns were about the process rather than specific executives inside the company. OpenAI stated that the agreement with the Pentagon creates a workable path for responsible national security uses of AI while making clear its red lines: no domestic surveillance and no autonomous weapons. Kalinowski plans to continue working in the field of responsible physical AI."
+      },
+      "score": null,
+      "checkpoint_path": null,
+      "eval_script": null,
+      "prepared_input_path": "artifacts/evaluation/ui/eval-91a001d2678c.factcc.jsonl"
+    },
+    "stability": {
+      "runs": 5,
+      "unique_outputs": 5,
+      "exact_match_rate": 0.0,
+      "mean_fuzzy_ratio": 82.64885324865703,
+      "mean_sequence_similarity": 0.43411885720233967,
+      "mean_vector_cosine": 0.8973263257041533,
+      "outputs_preview": [
+        "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned citing concerns over the company's partnership with the U.S. Department of Defense. Kalinowski expressed concerns that policy guardrails around certain AI uses were not sufficiently defined before the agreement was announced. She emphasized that her concerns were about the process rather than specific executives inside the company. OpenAI stated that the agreement with the Pentagon creates a workable path for responsible national security uses of AI while making clear its red lines: no domestic surveillance and no autonomous weapons. Kalinowski plans to continue working in the field of responsible physical AI.",
+        "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned due to concerns over the company's partnership with the U.S. Department of Defense. Kalinowski cited a lack of defined policy guardrails around certain AI uses before the agreement was announced. She emphasized that her concerns were about the process rather than specific executives, and expressed pride in the work she built with the team. OpenAI maintains that the agreement with the Pentagon creates a path for responsible national security uses of AI while setting clear red lines against domestic surveillance and autonomous weapons. Kalinowski plans to continue working in the field of responsible physical AI.",
+        "Caitlin Kalinowski, a senior member of OpenAI's robotics team, has resigned from the company citing concerns about the partnership with the U.S. Department of Defense. Kalinowski expressed concerns that policy guardrails around certain AI uses were not sufficiently defined before the agreement was announced. She stated that she resigned on \"principle\" and emphasized that her concerns were more about the process rather than specific executives inside the company. OpenAI has responded stating that the agreement with the Pentagon creates a workable path for responsible national security uses of AI while making clear their red lines: no domestic surveillance and no autonomous weapons."
+      ]
+    },
+    "compute": {
+      "eval-91a001d2678c-generation": {
+        "project_name": "eval-91a001d2678c-generation",
+        "status": "unavailable",
+        "message": "CodeCarbon is not installed. Install it from requirements-eval.txt."
+      },
+      "eval-91a001d2678c-evaluation": {
+        "project_name": "eval-91a001d2678c-evaluation",
+        "status": "unavailable",
+        "message": "CodeCarbon is not installed. Install it from requirements-eval.txt."
+      },
+      "total_emissions_kg": 0.0
+    }
+  },
+  "meta": {
+    "timestamp": "2026-03-11T16:49:30Z",
+    "tier": "tier1",
+    "output_format": "text",
+    "length": "short",
+    "artifact_source": null,
+    "analysis_version": "nlp-layer:1.0.0",
+    "title": "OpenAI robotics leader resigns over concerns about Pentagon AI deal",
+    "generation_skipped": false
+  }
+}

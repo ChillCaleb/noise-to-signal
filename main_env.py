@@ -122,9 +122,9 @@ def run_backtest_stub():
 # STREAMLIT APP
 # ════════════════════════════════════════════════
 def run_streamlit():
-    app_entry = PROJECT_ROOT / "app" / "Home.py"
+    app_entry = PROJECT_ROOT / "app" / "home.py"
     if not app_entry.exists():
-        error("Streamlit entry not found at app/Home.py")
+        error("Streamlit entry not found at app/home.py")
     status("Launching Streamlit (Ctrl+C to stop)...")
     py = sys.executable
     run([py, "-m", "streamlit", "run", str(app_entry)], check=False)

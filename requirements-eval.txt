@@ -1,0 +1,10 @@
+# Install torch first if your environment does not already have it.
+# Example:
+#   pip install torch
+
+torch==2.8.0
+huggingface-hub==0.17.0
+transformers==4.34.1
+tokenizers==0.14.1
+summac==0.0.4
+codecarbon>=3.0,<4

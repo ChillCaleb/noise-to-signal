@@ -1,20 +1,15 @@
-# streamlit_app.py  (put this at project root)
 import streamlit as st
 
-# === use the same functions you run from the CLI ===
 from main import (
-    build_document_from_url,
     build_document_from_text,
-    run_nlp,
+    build_document_from_url,
     run_llm,
+    run_nlp,
 )
-
-# UI helpers
 from app.ui.components import render_final_html
 from app.ui.theme import inject_global_theme
 
-# --- Streamlit setup ---
-st.set_page_config(page_title="Noise → Signal", layout="wide")
+st.set_page_config(page_title="Summary", layout="wide")
 inject_global_theme()
 
 st.title("Noise → Signal — Input → Final Summary")
@@ -45,9 +40,8 @@ if st.button("Analyze", type="primary"):
                 html = run_llm(analysis, tier="tier3", output_format="html", length="long")
             except TypeError:
                 html = run_llm(analysis, tier="tier3", output_format="html", length="short")
-
-        except Exception as e:
-            st.error(f"Pipeline error: {e}")
+        except Exception as exc:
+            st.error(f"Pipeline error: {exc}")
             st.stop()
 
     st.subheader("Final Summary")
