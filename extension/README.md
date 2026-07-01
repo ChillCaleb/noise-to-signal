@@ -37,6 +37,8 @@ The side panel defaults to `http://127.0.0.1:8000`.
 
 If the backend is running in GitHub Codespaces, forward port `8000` and paste the forwarded `https://...app.github.dev` URL into the extension's Backend field.
 
+If the backend has `EXTENSION_API_TOKEN` set, paste the same value into the extension's `API token` field.
+
 ## What works now
 
 - Reads the active page text when possible.

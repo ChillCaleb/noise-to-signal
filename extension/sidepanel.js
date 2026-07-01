@@ -2,6 +2,7 @@ const DEFAULT_API_BASE = "http://127.0.0.1:8000";
 
 const els = {
   apiBase: document.getElementById("apiBase"),
+  apiToken: document.getElementById("apiToken"),
   tier: document.getElementById("tier"),
   length: document.getElementById("length"),
   analyzePage: document.getElementById("analyzePage"),
@@ -37,14 +38,16 @@ function cleanApiBase() {
 async function saveSettings() {
   await storageSet({
     apiBase: cleanApiBase(),
+    apiToken: els.apiToken.value.trim(),
     tier: els.tier.value,
     length: els.length.value
   });
 }
 
 async function loadSettings() {
-  const settings = await storageGet(["apiBase", "tier", "length"]);
+  const settings = await storageGet(["apiBase", "apiToken", "tier", "length"]);
   els.apiBase.value = settings.apiBase || DEFAULT_API_BASE;
+  els.apiToken.value = settings.apiToken || "";
   els.tier.value = settings.tier || "tier2";
   els.length.value = settings.length || "medium";
 }
@@ -93,11 +96,16 @@ function setBusy(isBusy) {
 }
 
 async function postJson(path, payload) {
-  const response = await fetch(`${cleanApiBase()}${path}`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-  });
+  let response;
+  try {
+    response = await fetch(`${cleanApiBase()}${path}`, {
+      method: "POST",
+      headers: requestHeaders(true),
+      body: JSON.stringify(payload)
+    });
+  } catch (error) {
+    throw new Error(formatFetchError(error));
+  }
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
     throw new Error(data.detail || `Request failed with HTTP ${response.status}`);
@@ -106,12 +114,39 @@ async function postJson(path, payload) {
 }
 
 async function getJson(path) {
-  const response = await fetch(`${cleanApiBase()}${path}`);
+  let response;
+  try {
+    response = await fetch(`${cleanApiBase()}${path}`, {
+      headers: requestHeaders(false)
+    });
+  } catch (error) {
+    throw new Error(formatFetchError(error));
+  }
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
     throw new Error(data.detail || `Request failed with HTTP ${response.status}`);
   }
   return data;
+}
+
+function formatFetchError(error) {
+  const base = cleanApiBase();
+  if (base.includes("127.0.0.1") || base.includes("localhost")) {
+    return "Cannot reach the backend at localhost. If the API is running in Codespaces, forward port 8000 and paste the https://...app.github.dev URL here.";
+  }
+  return `Cannot reach backend at ${base}. Check that the API server is running and the port is public/forwarded.`;
+}
+
+function requestHeaders(hasJsonBody) {
+  const headers = {};
+  if (hasJsonBody) {
+    headers["Content-Type"] = "application/json";
+  }
+  const token = els.apiToken.value.trim();
+  if (token) {
+    headers["X-Noise-Signal-Key"] = token;
+  }
+  return headers;
 }
 
 function commaList(values, fallback = "None found") {
@@ -230,6 +265,7 @@ async function copySummary() {
 }
 
 els.apiBase.addEventListener("change", saveSettings);
+els.apiToken.addEventListener("change", saveSettings);
 els.tier.addEventListener("change", saveSettings);
 els.length.addEventListener("change", saveSettings);
 els.analyzePage.addEventListener("click", () => analyze("page"));

@@ -42,6 +42,8 @@ The extension reads the active page where Chrome permits it, sends the article t
 
 If the backend is running in GitHub Codespaces, forward port `8000` and paste the forwarded `https://...app.github.dev` URL into the extension's Backend field.
 
+To make the backend live outside Codespaces, use the included `Dockerfile` and see [docs/deploy-live-backend.md](docs/deploy-live-backend.md). For a public deployment, set `EXTENSION_API_TOKEN` on the backend and paste the same token into the extension's `API token` field.
+
 ## Evaluation Harness
 
 This repo now includes a modular evaluation harness that wraps the existing pipeline instead of replacing it.

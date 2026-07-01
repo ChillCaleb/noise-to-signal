@@ -6,7 +6,7 @@ from typing import Any, Dict, Optional
 from uuid import uuid4
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from adapter_input import to_document
@@ -69,6 +69,15 @@ def _pipeline_error(exc: Exception) -> HTTPException:
     return HTTPException(status_code=500, detail=f"Analysis failed: {message}")
 
 
+def require_extension_token(request: Request) -> None:
+    expected = os.getenv("EXTENSION_API_TOKEN")
+    if not expected:
+        return
+    provided = request.headers.get("X-Noise-Signal-Key")
+    if provided != expected:
+        raise HTTPException(status_code=401, detail="Invalid or missing extension API token.")
+
+
 @app.get("/health")
 def health() -> Dict[str, Any]:
     return {
@@ -79,8 +88,17 @@ def health() -> Dict[str, Any]:
     }
 
 
+@app.get("/")
+def root() -> Dict[str, Any]:
+    return {
+        "ok": True,
+        "service": "noise-to-signal-api",
+        "message": "Use /health to check status or /api/analyze from the Chrome extension.",
+    }
+
+
 @app.post("/api/analyze", response_model=AnalyzeResponse)
-def analyze(payload: AnalyzeRequest) -> AnalyzeResponse:
+def analyze(payload: AnalyzeRequest, _: None = Depends(require_extension_token)) -> AnalyzeResponse:
     run_id = str(uuid4())
     created_at = _now_iso()
 
@@ -141,12 +159,15 @@ def analyze(payload: AnalyzeRequest) -> AnalyzeResponse:
 
 
 @app.get("/api/history", response_model=HistoryResponse)
-def history(limit: int = Query(default=25, ge=1, le=100)) -> HistoryResponse:
+def history(
+    limit: int = Query(default=25, ge=1, le=100),
+    _: None = Depends(require_extension_token),
+) -> HistoryResponse:
     return HistoryResponse(items=list_runs(limit=limit))
 
 
 @app.get("/api/history/{run_id}")
-def history_detail(run_id: str) -> Dict[str, Any]:
+def history_detail(run_id: str, _: None = Depends(require_extension_token)) -> Dict[str, Any]:
     run = get_run(run_id)
     if not run:
         raise HTTPException(status_code=404, detail="Run not found.")
