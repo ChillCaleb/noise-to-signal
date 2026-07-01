@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Noise to Signal",
+  "description": "Summarize and analyze the current article with your Noise to Signal backend.",
+  "version": "0.1.0",
+  "minimum_chrome_version": "114",
+  "action": {
+    "default_title": "Open Noise to Signal"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:*/*",
+    "http://localhost:*/*",
+    "https://*.app.github.dev/*"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

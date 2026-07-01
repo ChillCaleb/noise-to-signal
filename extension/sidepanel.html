@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Noise to Signal</title>
+    <link rel="stylesheet" href="sidepanel.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>Noise to Signal</h1>
+          <p id="pageMeta" class="muted">Ready to analyze the active page.</p>
+        </div>
+        <button id="refreshHistory" class="icon-button" title="Refresh history" aria-label="Refresh history">R</button>
+      </header>
+
+      <section class="controls" aria-label="Analysis controls">
+        <label>
+          Backend
+          <input id="apiBase" type="url" spellcheck="false" value="http://127.0.0.1:8000">
+        </label>
+
+        <div class="control-grid">
+          <label>
+            Depth
+            <select id="tier">
+              <option value="tier2" selected>Explain</option>
+              <option value="tier1">Recap</option>
+            </select>
+          </label>
+          <label>
+            Length
+            <select id="length">
+              <option value="short">Short</option>
+              <option value="medium" selected>Medium</option>
+              <option value="long">Long</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="button-row">
+          <button id="analyzePage" class="primary">Analyze page</button>
+          <button id="analyzeUrl">URL only</button>
+        </div>
+      </section>
+
+      <section id="status" class="status" role="status">Start the backend, open an article, then analyze.</section>
+
+      <section class="result">
+        <div class="section-title">
+          <h2>Summary</h2>
+          <button id="copySummary" class="small-button">Copy</button>
+        </div>
+        <pre id="summary" class="summary">No summary yet.</pre>
+      </section>
+
+      <section class="facts">
+        <div class="section-title">
+          <h2>Signals</h2>
+        </div>
+        <dl id="signals"></dl>
+      </section>
+
+      <section class="history">
+        <div class="section-title">
+          <h2>Recent</h2>
+        </div>
+        <ol id="historyList" class="history-list"></ol>
+      </section>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>
+

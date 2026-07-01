@@ -17,6 +17,31 @@ streamlit run streamlit_app.py
 
 The new evaluation UI is available from the multipage app as the `Evaluation` page, and the single-file `streamlit_app.py` now renders the same comparison view directly.
 
+## Chrome Extension MVP
+
+This repo now includes a local Chrome extension under `extension/` plus a FastAPI backend under `api/`.
+
+Start the backend:
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env
+# add GROQ_API_KEY to .env
+python -m uvicorn api.server:app --reload --host 0.0.0.0 --port 8000
+```
+
+Then load the extension:
+
+1. Open `chrome://extensions`.
+2. Enable Developer mode.
+3. Click `Load unpacked`.
+4. Select the `extension/` directory.
+5. Open an article and click the Noise to Signal toolbar button.
+
+The extension reads the active page where Chrome permits it, sends the article text or URL to `POST /api/analyze`, displays the summary/signals in the side panel, and saves recent runs to `data/noise_to_signal_extension.db`.
+
+If the backend is running in GitHub Codespaces, forward port `8000` and paste the forwarded `https://...app.github.dev` URL into the extension's Backend field.
+
 ## Evaluation Harness
 
 This repo now includes a modular evaluation harness that wraps the existing pipeline instead of replacing it.
