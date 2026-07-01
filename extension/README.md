@@ -45,6 +45,8 @@ If the backend is running in GitHub Codespaces, forward port `8000` and paste th
 - Shows the summary and extracted signals.
 - Saves recent analyses in SQLite via the backend.
 
+The extension requests broad page access so the side panel can extract article text from the currently open tab. The API key still stays only on the backend.
+
 ## Known next steps
 
 - Add authentication before exposing the backend publicly.
